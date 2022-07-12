@@ -13,20 +13,3 @@
 .enemy__move {
     grid-area: result;
 }
-
-@media (max-width: 900px) {
-
-/*     .character {
-        grid-template-areas: 
-        "control"
-        "player"
-        "enemy";
-    } */
-
-/*     .player, .enemy {
-        grid-template-areas: 
-        "result"
-        "character";
-    } */
-
-}

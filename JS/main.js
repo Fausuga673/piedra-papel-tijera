@@ -16,14 +16,14 @@ scissor.addEventListener("click", function() {
 })
 
 function tieMessege() {
-    return messege.innerHTML = "Empate.", messege.style.color = "var(--color-white)";
+    return messege.innerHTML = "Empate.", messege.className = "tieMessege";
 }
 function loseMessege() {
-    return messege.innerHTML = "Perdiste...", messege.style.color = "var(--color-red)";
+    return messege.innerHTML = "Perdiste...",  messege.className = "loseMessege";
 }
 
 function winMessege() {
-    return messege.innerHTML = "¡Tú ganas!", messege.style.color = "var(--color-green)";
+    return messege.innerHTML = "¡Tú ganas!", messege.className = "winMessege";
 }
 
 function playerMove(move) {

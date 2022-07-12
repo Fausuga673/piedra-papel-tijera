@@ -18,13 +18,9 @@
     --color-green: #00c61e;
     --color-dark-green: #075413;
     --color-yellow: #ffa600;
+    --color-dark-yellow: #7e570f;
     --color-red: #d42a2a;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    place-items: center;
+    --color-dark-red: #7d1e1e;
 }
 
 body {
@@ -36,4 +32,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(4px);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
