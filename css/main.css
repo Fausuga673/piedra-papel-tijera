@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+:root {
+    --color-black: #1d1d1d;
+    --color-white: #ffffff;
+    --color-medium-white: #c6c6c6;
+    --color-dark-white: #e2e2e2;
+    --color-gray: #8b8b8b;
+    --color-medium-gray: #555555;
+    --color-dark-gray: #373737;
+    --color-medium-purple: #2c164c;
+    --color-dark-purple: #241524;
+    --color-green: #00c61e;
+    --color-dark-green: #075413;
+    --color-yellow: #ffa600;
+    --color-red: #d42a2a;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-image: linear-gradient(
+        180deg,
+        rgba(53, 168, 240, 0.714),
+        rgb(16, 16, 16)
+    ), url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel, tijeras</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/character.css">
+    <link rel="stylesheet" href="css/grid-areas.css">
+
+</head>
+<body>
+    <main class="container">
+        <section class="character">
+            <article class="control"> <!-- CONTROLS-->
+                <h2>Opciones</h2>
+                <button class="control__button" id="control__rock"  type="button">
+                    <img src="img/rock.png">
+                    <h3>Piedra</h3>
+                </button>
+                <button class="control__button" id="control__paper" type="button">
+                    <img src="img/paper.png">
+                    <h3>Papel</h3>
+                </button>
+                <button class="control__button" id="control__scissor" type="button">
+                    <img src="img/shears.png">
+                    <h3>Tijeras</h3>
+                </button>
+            </article> 
+            <h2 class="messege" id="messege">Elige una opción</h2>
+            <article class="player">
+                <img class="player__img" src="img/steve.png">
+                <img class="player__move" src="img/rock.png"> <!-- PLAYER MOVE -->
+            </article>
+            <article class="enemy">
+                <img class="enemy__img" src="img/alex.png">
+                <img class="enemy__move" src="img/paper.png"> <!-- ENEMY MOVE -->
+            </article>
+        </section>
+    </main>
+    <script src="JS/main.js"></script>
+</body>
+</html>

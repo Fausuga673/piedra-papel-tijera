@@ -1,0 +1,130 @@
+.character {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+        "control control"     
+        "messege messege"
+        "player enemy"
+}
+
+.control {
+    padding: 1vw 2vw 2vw 2vw;
+    grid-area: control;
+    display: grid;
+    grid-template-areas: 
+        "option option option"
+        "stone paper scissor";
+    background: var(--color-medium-white);
+    border-top: .4vw solid var(--color-white);
+    border-left: .4vw solid var(--color-white);
+    border-bottom: .4vw solid var(--color-medium-gray);
+    border-right: .4vw solid var(--color-medium-gray);
+    border-radius: .2vw;
+    outline: .4vw solid var(--color-black);
+}
+
+.control h2 {
+    grid-area: option;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--color-medium-gray);
+    text-align: center;
+    font-size: min(30px, 10vw);
+    margin-bottom: 10px;
+}
+
+.control__button {
+    width: max(6vw, 40px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--color-gray);
+    border-top: .4vw solid var(--color-dark-gray);
+    border-left: .4vw solid var(--color-dark-gray);
+    border-bottom: .2vw solid var(--color-dark-white);
+    border-right: .2vw solid var(--color-dark-white);
+/*     border: none;*/
+}
+
+.control__button h3 {
+    display: none;
+    position: absolute;
+    margin-right: -40px;
+    padding: .2vw 2vw .2vw .2vw;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: min(25px, 3.5vw);
+    text-shadow: .1vw .1vw var(--color-medium-gray);
+    letter-spacing: 2px;
+    outline: .2vw solid var(--color-black);
+    border: .2vw solid var(--color-medium-purple);
+    border-radius: .1vw;
+    background: var(--color-dark-purple);
+}
+
+.control__button:hover {
+    background: var(--color-medium-white);
+} 
+
+.control__button:hover img {
+    animation: option .6s;
+}
+
+.control__button:hover h3 {
+    display: block;
+}
+
+.control__button img {
+    width: 100%;
+    height: 100%;
+}
+
+.messege {
+    grid-area: messege;
+    letter-spacing: 2px;
+    color: var(--color-yellow);
+    font-weight: 800;
+    text-align: center;
+    font-size: min(100px, 20vw);
+    animation: messege-animation .6s infinite ease-in;
+}
+
+.player, .enemy {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+    "result character";
+}
+
+
+.player__img, .enemy__img {
+    width: max(12vw, 50px);
+}
+
+.player__move, .enemy__move {
+    width: max(10vw, 20px);
+}
+
+.player__img {
+    transform: scaleX(-1);
+}
+
+@keyframes option {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes messege-animation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+}
