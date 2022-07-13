@@ -87,6 +87,20 @@
     "result character";
 }
 
+.player__container, .enemy__container {
+    text-align: center;
+    width:max-content
+}
+
+.name {
+    font-size: min(25px, 3.5vw);
+    color: var(--color-white);
+    font-weight: 50;
+    font-size: min(25px, 4vw);
+    text-shadow: .1vw .1vw var(--color-medium-gray);
+    letter-spacing: 2px;
+}
+
 .player__img, .enemy__img {
     width: max(12vw, 50px);
 }
