@@ -1,3 +1,5 @@
+const audio = document.getElementById("audio");
+
 const rock = document.getElementById("control__rock");
 const paper = document.getElementById("control__paper");
 const scissor = document.getElementById("control__scissor");
@@ -27,7 +29,7 @@ function loseMessege() {
 }
 
 function winMessege() {
-    return messege.innerHTML = "¡Tú ganas!", messege.className = "winMessege";
+    return messege.innerHTML = "¡Tú ganas!", messege.className = "winMessege", audio.innerHTML = '<audio src="sound/rocket.mp3" autoplay></audio>';
 }
 
 function combat(move) {
