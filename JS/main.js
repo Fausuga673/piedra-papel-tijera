@@ -29,7 +29,7 @@ function tieMessege() {
 function defeatMessege() {
     return messege.innerHTML = "Perdiste...",  
     messege.className = "defeatMessege",
-    audio.innerHTML = '<audio src="sound/defeat.mp3" volume="-1500" autoplay></audio>';
+    audio.innerHTML = '<audio src="sound/defeat.mp3" autoplay></audio>';
 }
 
 function victoryMessege() {
@@ -38,7 +38,7 @@ function victoryMessege() {
     audio.innerHTML = '<audio src="sound/victory.mp3" autoplay></audio>';
 }
 
-function combat(move) {
+function combat(player) {
 
     let enemy = Math.floor(Math.random() * 3 + 1);
 
@@ -48,7 +48,7 @@ function combat(move) {
     
     enemyImgMove.src = `img/${enemy}.png`
 
-    if (move == rock) {
+    if (player == rock) {
 
         playerImgMove.src=`img/rock.png`;
         
@@ -56,7 +56,7 @@ function combat(move) {
         if (enemy == "paper") defeatMessege();
         if (enemy == "scissor") victoryMessege();
         
-    } else if (move == paper) {
+    } else if (player == paper) {
         
         playerImgMove.src="img/paper.png";
         
@@ -64,7 +64,7 @@ function combat(move) {
         if (enemy == "paper") tieMessege();
         if (enemy == "scissor") defeatMessege();
         
-    }  else if (move == scissor) {
+    }  else if (player == scissor) {
         
         playerImgMove.src="img/scissor.png";
         
