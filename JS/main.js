@@ -22,14 +22,20 @@ scissor.addEventListener("click", function() {
 })
 
 function tieMessege() {
-    return messege.innerHTML = "Empate.", messege.className = "tieMessege";
+    return messege.innerHTML = "Empate.",
+    messege.className = "tieMessege",
+    audio.innerHTML = '<audio src="sound/tie.mp3" autoplay></audio>';
 }
-function loseMessege() {
-    return messege.innerHTML = "Perdiste...",  messege.className = "loseMessege";
+function defeatMessege() {
+    return messege.innerHTML = "Perdiste...",  
+    messege.className = "defeatMessege",
+    audio.innerHTML = '<audio src="sound/defeat.mp3" volume="-1500" autoplay></audio>';
 }
 
-function winMessege() {
-    return messege.innerHTML = "¡Tú ganas!", messege.className = "winMessege", audio.innerHTML = '<audio src="sound/rocket.mp3" autoplay></audio>';
+function victoryMessege() {
+    return messege.innerHTML = "¡Tú ganas!", 
+    messege.className = "victoryMessege", 
+    audio.innerHTML = '<audio src="sound/victory.mp3" autoplay></audio>';
 }
 
 function combat(move) {
@@ -47,23 +53,23 @@ function combat(move) {
         playerImgMove.src=`img/rock.png`;
         
         if (enemy == "rock") tieMessege();
-        if (enemy == "paper") loseMessege();
-        if (enemy == "scissor") winMessege();
+        if (enemy == "paper") defeatMessege();
+        if (enemy == "scissor") victoryMessege();
         
     } else if (move == paper) {
         
         playerImgMove.src="img/paper.png";
         
-        if (enemy == "rock") winMessege();
+        if (enemy == "rock") victoryMessege();
         if (enemy == "paper") tieMessege();
-        if (enemy == "scissor") loseMessege();
+        if (enemy == "scissor") defeatMessege();
         
     }  else if (move == scissor) {
         
         playerImgMove.src="img/scissor.png";
         
-        if (enemy == "rock") loseMessege();
-        if (enemy == "paper") winMessege();
+        if (enemy == "rock") defeatMessege();
+        if (enemy == "paper") victoryMessege();
         if (enemy == "scissor") tieMessege();
 
     }

@@ -1,7 +1,7 @@
 .messege,
 .tieMessege,
-.loseMessege,
-.winMessege {
+.defeatMessege,
+.victoryMessege {
     grid-area: messege;
     letter-spacing: 2px;
     font-weight: 800;
@@ -20,12 +20,12 @@
     text-shadow: .2vw .2vw var(--color-dark-gray);
 }
 
-.loseMessege {
+.defeatMessege {
     color: var(--color-red);
     text-shadow: .2vw .2vw var(--color-dark-red);
 }
 
-.winMessege {
+.victoryMessege {
     color: var(--color-green);
     text-shadow: .2vw .2vw var(--color-dark-green);
 }
