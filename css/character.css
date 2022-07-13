@@ -39,20 +39,19 @@
     width: max(6vw, 40px);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     background: var(--color-gray);
     border-top: .4vw solid var(--color-dark-gray);
     border-left: .4vw solid var(--color-dark-gray);
     border-bottom: .2vw solid var(--color-dark-white);
     border-right: .2vw solid var(--color-dark-white);
-/*     border: none;*/
 }
 
 .control__button h3 {
     display: none;
     position: absolute;
     margin-right: -40px;
-    padding: .2vw 2vw .2vw .2vw;
+    padding: .2vw .6vw .2vw .2vw;
     color: var(--color-white);
     font-weight: 500;
     font-size: min(25px, 3.5vw);
@@ -106,14 +105,5 @@
     }
     50%{
         transform: scale(1.1);
-    }
-}
-
-@keyframes messege-animation {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.03);
     }
 }

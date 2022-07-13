@@ -29,3 +29,12 @@
     color: var(--color-green);
     text-shadow: .2vw .2vw var(--color-dark-green);
 }
+
+@keyframes messege-animation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+}
