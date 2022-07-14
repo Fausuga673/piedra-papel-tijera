@@ -40,7 +40,7 @@ function victoryMessege() {
 
 function combat(player) {
 
-    let enemy = Math.floor(Math.random() * 3 + 1);
+    let enemy = Math.trunc(Math.random() * 3 + 1);
 
     if (enemy == 1) enemy = "rock";
     if (enemy == 2) enemy = "paper";
