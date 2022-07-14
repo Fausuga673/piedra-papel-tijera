@@ -7,7 +7,7 @@ const scissor = document.getElementById("control__scissor");
 const playerImgMove = document.getElementById("player__move");
 const enemyImgMove = document.getElementById("enemy__move");
 
-const messege = document.getElementById("messege");
+let messege = document.getElementById("messege");
 
 rock.addEventListener("click", function() {
     combat(rock);
