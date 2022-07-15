@@ -1,5 +1,3 @@
-const audio = document.getElementById("audio");
-
 const rock = document.getElementById("control__rock");
 const paper = document.getElementById("control__paper");
 const scissor = document.getElementById("control__scissor");
@@ -7,7 +5,8 @@ const scissor = document.getElementById("control__scissor");
 const playerImgMove = document.getElementById("player__move");
 const enemyImgMove = document.getElementById("enemy__move");
 
-let messege = document.getElementById("messege");
+const messege = document.getElementById("messege");
+const audio = document.getElementById("audio");
 
 rock.addEventListener("click", function() {
     combat(rock);
