@@ -101,7 +101,7 @@
     letter-spacing: 2px;
 }
 
-.player__img, .enemy__img {
+.player__container--img, .enemy__container--img {
     width: max(12vw, 50px);
 }
 
@@ -109,7 +109,7 @@
     width: max(10vw, 20px);
 }
 
-.player__img {
+.player__container--img {
     transform: scaleX(-1);
 }
 
